@@ -5,27 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+           .parent{
+            border: 3px solid;
+            width: 1000px;
+            height: 600px;
+            background-color: aqua;
+            overflow: scroll;
+            }
+            .name{
+                border: 2px solid;
+                background-color: blueviolet;
+                color: white;
+                text-align: center;
+            }
+            .child-1 h1{
+                
+                display: inline;
+                padding-left: 20px;
+            
+            }
+            a{
+                 text-decoration: none;
+            }
+            .main{
+                background-color: orange;
+            }
+            :target{
+                background-color: brown;
+            }
+            ::-webkit-scrollbar{
+                display: none;
+            }
+           
     </style>
 </head>
 <body>
-    <div> 
-        <div>
-        <a href=""><h1>About</h1></a>
-        <a href=""><h1>Education</h1></a>
-        <a href=""><h1>Projects</h1></a>
-        <a href=""><h1>Skills</h1></a>
-        <a href=""><h1>Certifications</h1></a>
-        <a href=""><h1>Contact</h1></a>
+    <div class="parent">
+        <div class="name"><h1>HEMANTH KUMAR</h1></div>
+        <div class="child-1">
+        <a href="#About"><h1>About</h1></a>
+        <a href="#Edu"><h1>Education</h1></a>
+        <a href="#Proj"><h1>Projects</h1></a>
+        <a href="#sk"><h1>Skills</h1></a>
+        <a href="#cf"><h1>Certifications</h1></a>
+        <a href="#con"><h1>Contact</h1></a>
     </div>
     <div>
-        <main>
-            <section>
-
+        <main class="main">
+            <section id="About">
+                <h1>About</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem at facere veritatis quam, quis laboriosam similique porro sunt ullam, impedit minus aspernatur officiis doloribus, voluptate quia. Natus temporibus suscipit adipisci.</p>
             </section>
-            <section></section>
-            <section></section>
-            <section></section>
+            <section id="Edu">
+                <h1>Education</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, incidunt! Voluptate minus repudiandae fugit nostrum ipsum voluptas consequuntur modi laboriosam quibusdam iure tenetur voluptates quam delectus nam, quos autem. Facilis.</p>
+            </section>
+            <section id="Proj">
+                <h1>Projects</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus similique ad numquam hic magnam earum, officiis nihil facere suscipit corrupti dolore delectus blanditiis repellendus aliquam recusandae at esse debitis? Dolore.</p>
+            </section>
+            <section id="sk">
+                <h1>Skills</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit vero doloremque ad ea recusandae non ut, quo sint esse qui a? Recusandae accusamus ex atque quia ullam soluta ipsam voluptatem!</p>
+            </section>
+            <section id="cf">
+                <h1>Certifications</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit necessitatibus veniam debitis ipsam non ab aut ducimus inventore, labore in! Natus deserunt temporibus amet eos minus hic repellendus fugiat.</p>
+            </section>
+            <section id="con">
+                <h1>Contact</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, ducimus. Impedit, incidunt ex voluptatem quasi numquam totam dolore et. Modi perspiciatis ullam illum eligendi, sunt accusantium veniam quidem id est!</p>
+            </section>
         </main>
     </div>
 </div>
